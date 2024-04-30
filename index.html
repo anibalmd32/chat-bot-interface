@@ -3,18 +3,21 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Chat Bot Interface</title>
+	
 	<link rel="stylesheet" href="styles/main.css">
 	<link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon">
+
+	<title>Chat Bot Interface</title>
 </head>
 <body>
 	<header>
-    <button class="hamburger-menu" id="hamburger-menu-btn">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </button>
-  </header>
+		<button class="hamburger-menu" id="hamburger-menu-btn">
+		<span class="bar"></span>
+		<span class="bar"></span>
+		<span class="bar"></span>
+		</button>
+  	</header>
+
 	<main class="app-container">
 		<aside class="sidebar">
 			<article class="sidebar-header">
@@ -29,19 +32,23 @@
 			<img src="assets/illustration.svg" class="chat-illustration" alt="chat illustration">
 
 			<div class="chat-interface hidden">
-				<!-- <header class="chat-header">
-					<article class="chat-user"></article>
-				</header> -->
-	
 				<article class="chat-body"></article>
 	
 				<div class="chat-input-container">
-					<textarea name="" id="" cols="30" rows="3" class="chat-input" placeholder="Start typing"></textarea>
+					<textarea
+						name=""
+						id=""
+						cols="30"
+						rows="3"
+						class="chat-input"
+						placeholder="Start typing"
+					>
+					</textarea>
 				</div>
-
 			</div>
 		</section>
 	</main>
+
 	<script type="module" src="scripts/main.js"></script>
 </body>
 </html>
