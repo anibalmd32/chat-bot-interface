@@ -1,0 +1,11 @@
+.hidden {
+	display: none !important;
+}
+
+.item-left {
+	align-self: flex-start;
+}
+
+.item-right {
+	align-self: flex-end;
+}
