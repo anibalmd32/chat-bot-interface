@@ -1,3 +1,4 @@
+// HTML ELEMENTS FOR ADD INTERACTIVITY
 const asideBody = document.querySelector('.sidebar-body');
 const chatIlustration = document.querySelector('.chat-illustration');
 const chatInterface = document.querySelector('.chat-interface');

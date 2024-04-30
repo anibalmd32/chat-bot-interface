@@ -1,8 +1,8 @@
-import { asideBody } from './scripts/elements.js';
-import { platforms } from './scripts/data.js';
-import renderChat from './scripts/renderChat.js';
+import { asideBody } from './elements.js';
+import { platforms } from './data.js';
+import renderChat from './renderChat.js';
 
-console.log('Chat Bot Interface')
+// INITIALIZATION SIDE BAR
 platforms.forEach(platform => {
 	const itemElement = document.createElement('a')
 	itemElement.classList.add('sidebar-item')
@@ -16,8 +16,6 @@ platforms.forEach(platform => {
 	asideBody.appendChild(itemElement)
 })
 
+// RENDER CHAT BY DEFAULT IF PARAM EXISTS
 const platformParam = new URLSearchParams(window.location.search).get('platform')
-
-if (platformParam) {
-	renderChat(platformParam)
-}
+platformParam && renderChat(platformParam)
