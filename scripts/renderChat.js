@@ -1,9 +1,7 @@
 import { allData } from "./data.js";
 import { chatIlustration, chatInterface, chatBody } from "./elements.js";
 
-export default function renderChat(event) {
-	event.preventDefault()
-	const platform = event.target.textContent
+export default function renderChat(platform) {
 	window.history.replaceState('', '', `?platform=${platform}`)
 
 	chatBody.innerHTML = ''
