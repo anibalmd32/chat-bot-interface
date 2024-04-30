@@ -1,7 +1,7 @@
 @import url('./variables.css');
-@import url('./utils.css');
 @import url('./app-styles/app.css');
 @import url('./header.css');
+@import url('./utils.css');
 
 * {
 	margin: 0;

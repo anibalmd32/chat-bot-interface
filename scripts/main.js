@@ -1,6 +1,7 @@
-import { asideBody } from './elements.js';
+import { asideBody, asidePanel } from './elements.js';
 import { platforms } from './data.js';
 import renderChat from './renderChat.js';
+import './menuBtn.js'
 
 // INITIALIZATION SIDE BAR
 platforms.forEach(platform => {
@@ -10,7 +11,9 @@ platforms.forEach(platform => {
 	itemElement.addEventListener('click', e => {
 		e.preventDefault()
 		renderChat(platform)
+		asidePanel.classList.contains('block') && asidePanel.classList.toggle('block')
 	})
+
 	itemElement.textContent = platform
 	
 	asideBody.appendChild(itemElement)
