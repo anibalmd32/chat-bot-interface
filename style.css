@@ -2,7 +2,7 @@
 	--main: #7b3483;
 	--dark-1: #434053;
 	--dark-2: #302f41;
-	--ligth-2: #ccbed0;
+	--ligth-1: #ccbed0;
 	--ligth-2: #878690;
 }
 
@@ -17,4 +17,36 @@ body {
 	width: 100%;
 	height: 100vh;
 	background-color: var(--dark-2);
+}
+
+.app-container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	display: grid;
+	grid-template-columns: minmax(200px, 25%) 1fr;
+
+	& .sidebar {
+		padding: 1rem;
+		width: 100%;
+		height: 100%;
+		background-color: var(--dark-1);
+		color: var(--ligth-1);
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		align-items: center;
+	}
+
+	& .chat {
+		padding: 1rem;
+		width: 100%;
+		height: 100%;
+		background-color: var(--ligth-1);
+		color: var(--dark-1);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 }
